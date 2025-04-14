@@ -67,7 +67,7 @@ public class Main {
        // System.out.println("Welcome " + firstName + " " + lastName + ", " + "it is great to have you back!");
         
         
-        // Login phase
+        // Login system
         boolean loggedIn = false;
         while (!loggedIn) {
             System.out.println("\n=== User Login ===");
