@@ -61,7 +61,7 @@ public class Login {
             
     }
  
-    
+    //checks if passwords matches
     public boolean checkPasswordComplexity(String Password){
        return Password.length() >= 8 &&
               Password.matches(". *[A-Z].*") &&
@@ -73,14 +73,15 @@ public class Login {
         
     public String registerUser(String checkUsername, String Password, String cellphoneNumber) {
         if(checkUsername(username)){
-            System.out.print("");
+            System.out.print("“Welcome <user first name> ,<user last name>it is great to see you.”");
     }else {
-            System.out.print("");
+            System.out.print("“Username is not correctly formatted, please ensure that your username contains an underscore and is no more than five characters in length");
 } 
         if(checkPasswordComplexity(password)) {
-            System.out.print("");
+            System.out.print("Password successfully captured.");
         }else {
-            System.out.print("");
+            System.out.print("Password is not correctly formatted, please ensure that the password contains at least eight characters, a capital letter, a number, and a special character."
+);
         }
         
         return "User registered successfully!";
